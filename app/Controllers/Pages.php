@@ -6,7 +6,16 @@ class Pages extends BaseController
 {
     public function index()
     {
-        // return view('layout/navbar');
-        return view('pages/katalog');
+        $data = [
+            'title' => 'Katalog | Book Shop',
+        ];
+        return view('pages/katalog', $data);
+    }
+    public function about()
+    {
+        $data = [
+            'title' => 'About | Book Shop',
+        ];
+        return view('pages/about', $data);
     }
 }

@@ -1,14 +1,12 @@
-<!doctype html>
-<html lang="en">
+<?= $this->extend('layout/template'); ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-</head>
-
-<body>
-    <h1>Hello, world!</h1>
-</body>
-
-</html>
+<?= $this->section('content'); ?>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Katalog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque fugit, est vitae id similique repellat. Ratione voluptas quos repellendus explicabo, optio distinctio similique aliquid eaque architecto voluptatibus quam vero?</p>
+        </div>
+    </div>
+</div>
+<?= $this->endSection(); ?>
