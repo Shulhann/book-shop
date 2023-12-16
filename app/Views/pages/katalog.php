@@ -2,11 +2,18 @@
 
 <?= $this->section('content'); ?>
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1>Katalog</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cumque fugit, est vitae id similique repellat. Ratione voluptas quos repellendus explicabo, optio distinctio similique aliquid eaque architecto voluptatibus quam vero?</p>
-        </div>
+    <div class="column-gap-3 row" style="display:flex;justify-content: center;flex-wrap: wrap; gap: 2rem;">
+        <?php foreach ($books as $book) : ?>
+            <div class="card mt-4" style="width: 18rem; border-radius: 10px;">
+                <div class="card-body">
+                    <h5 class="card-title"><?= $book['judul']; ?></h5>
+                    <p class="card-text" style="min-height: 15rem;"><?= $book['deskripsi']; ?></p>
+                    <p class="card-text">Stok : <?= $book['stok']; ?></p>
+                    <p class="card-text">Harga : <?= $book['harga']; ?></p>
+                    <a href="/beli/<?= $book['id']; ?>" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
 </div>
 <?= $this->endSection(); ?>
