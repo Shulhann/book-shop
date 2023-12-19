@@ -1,3 +1,10 @@
+# Tugas Besar TST Kelompok 22
+## Anggota:
+
+1. Muhammad Shulhan		/ 18221051
+2. Mochamad Syahrial Alzaidan	/ 18221055
+3. Danang Ihsan			/ 18221057
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
